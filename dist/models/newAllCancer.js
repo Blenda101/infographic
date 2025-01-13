@@ -1,0 +1,52 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const mongoose_1 = require("mongoose");
+const newAllCancerSchema = new mongoose_1.Schema({
+    Year: String,
+    Locationabbr: String,
+    AGE_ADJUSTED_CI_LOWER: String,
+    AGE_ADJUSTED_CI_UPPER: String,
+    Locationdesc: String,
+    Topic: String,
+    Gender: String,
+    ageGroup: String,
+    ageLabel: String,
+    Race: String,
+    Count: String,
+    CountInNumber: Number,
+    Population: String,
+    PopulationInNumber: Number,
+    CrudeRate: String,
+    CrudeRateInNumber: Number,
+    diseaseLabelMale: String,
+    diseaseLabelFemale: String,
+    type: String,
+    cnt: Number,
+    SITE: String,
+    CRUDE_CI_LOWER: String,
+    CRUDE_CI_UPPER: String,
+    AGE_ADJUSTED_RATE: String,
+    RACE_UI: String,
+    RACE_ORIGIN: String,
+});
+const NewAllCancer = (0, mongoose_1.model)('newAllCancer', newAllCancerSchema);
+exports.default = NewAllCancer;
+let obj = {
+    AREA: 'Alabama',
+    AGE_ADJUSTED_CI_LOWER: '359.6',
+    AGE_ADJUSTED_CI_UPPER: '374.7',
+    AGE_ADJUSTED_RATE: '367.1',
+    COUNT: '9297',
+    EVENT_TYPE: 'Incidence',
+    POPULATION: '2293259',
+    RACE: 'All Races',
+    SEX: 'Female',
+    SITE: 'All Cancer Sites Combined',
+    YEAR: '1999',
+    CRUDE_CI_LOWER: '397.2',
+    CRUDE_CI_UPPER: '413.7',
+    CRUDE_RATE: '405.4',
+    Locationabbr: 'AL',
+    'Race UI': 'All Races',
+    'SITE UI': 'All Cancer',
+};
