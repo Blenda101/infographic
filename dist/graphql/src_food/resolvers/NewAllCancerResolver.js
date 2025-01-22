@@ -881,6 +881,15 @@ let AllCancerResolver = class AllCancerResolver {
         }
         return maleData;
     }
+    async changeLeukemia() {
+        await newAllCancer_1.default.updateMany({
+            SITE: 'Leukemias',
+            Gender: "Male"
+        }, {
+            diseaseLabelMale: 'Leukemias',
+        });
+        return 'doen';
+    }
     async newDataImport() {
         //NOTE: add data from csv to json
         // const csvFilePath = './temp/all_cancer.csv';
@@ -1023,6 +1032,12 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], AllCancerResolver.prototype, "tuttrus", null);
+__decorate([
+    (0, type_graphql_1.Query)(() => String),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], AllCancerResolver.prototype, "changeLeukemia", null);
 __decorate([
     (0, type_graphql_1.Query)(() => String),
     __metadata("design:type", Function),
