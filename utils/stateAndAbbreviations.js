@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 function getStateAbbreviation(state) {
     switch (state) {
         case 'Alabama':
@@ -106,4 +106,4 @@ function getStateAbbreviation(state) {
             return null;
     }
 }
-exports.default = getStateAbbreviation;
+exports["default"] = getStateAbbreviation;

@@ -1,7 +1,7 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const mongoose_1 = require("mongoose");
-const newAllCancerSchema = new mongoose_1.Schema({
+exports.__esModule = true;
+var mongoose_1 = require("mongoose");
+var newAllCancerSchema = new mongoose_1.Schema({
     Year: String,
     Locationabbr: String,
     AGE_ADJUSTED_CI_LOWER: String,
@@ -27,11 +27,11 @@ const newAllCancerSchema = new mongoose_1.Schema({
     CRUDE_CI_UPPER: String,
     AGE_ADJUSTED_RATE: String,
     RACE_UI: String,
-    RACE_ORIGIN: String,
+    RACE_ORIGIN: String
 });
-const NewAllCancer = (0, mongoose_1.model)('newAllCancer', newAllCancerSchema);
-exports.default = NewAllCancer;
-let obj = {
+var NewAllCancer = (0, mongoose_1.model)('newAllCancer', newAllCancerSchema);
+exports["default"] = NewAllCancer;
+var obj = {
     AREA: 'Alabama',
     AGE_ADJUSTED_CI_LOWER: '359.6',
     AGE_ADJUSTED_CI_UPPER: '374.7',
@@ -48,5 +48,5 @@ let obj = {
     CRUDE_RATE: '405.4',
     Locationabbr: 'AL',
     'Race UI': 'All Races',
-    'SITE UI': 'All Cancer',
+    'SITE UI': 'All Cancer'
 };

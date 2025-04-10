@@ -1,7 +1,7 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const mongoose_1 = require("mongoose");
-const infoGraphicCancerIncidentSchema = new mongoose_1.Schema({
+exports.__esModule = true;
+var mongoose_1 = require("mongoose");
+var infoGraphicCancerIncidentSchema = new mongoose_1.Schema({
     Year: String,
     Locationabbr: String,
     Locationdesc: String,
@@ -17,7 +17,7 @@ const infoGraphicCancerIncidentSchema = new mongoose_1.Schema({
     CrudeRate: String,
     CrudeRateInNumber: Number,
     diseaseLabelMale: String,
-    diseaseLabelFemale: String,
+    diseaseLabelFemale: String
 });
-const InfoGraphicCancerIncident = (0, mongoose_1.model)('infoGraphicCancerIncident', infoGraphicCancerIncidentSchema);
-exports.default = InfoGraphicCancerIncident;
+var InfoGraphicCancerIncident = (0, mongoose_1.model)('infoGraphicCancerIncident', infoGraphicCancerIncidentSchema);
+exports["default"] = InfoGraphicCancerIncident;

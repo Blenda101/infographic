@@ -1,7 +1,7 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const mongoose_1 = require("mongoose");
-const infoGraphicDeathSchema = new mongoose_1.Schema({
+exports.__esModule = true;
+var mongoose_1 = require("mongoose");
+var infoGraphicDeathSchema = new mongoose_1.Schema({
     Condition: String,
     Topic: String,
     ICD_Sub_Chapter_Code: String,
@@ -21,7 +21,7 @@ const infoGraphicDeathSchema = new mongoose_1.Schema({
     Population: String,
     PopulationInNumber: Number,
     Crude_Rate: String,
-    CrudeRateInNumber: Number,
+    CrudeRateInNumber: Number
 });
-const InfoGraphicDeath = (0, mongoose_1.model)('infoGraphicDeath', infoGraphicDeathSchema);
-exports.default = InfoGraphicDeath;
+var InfoGraphicDeath = (0, mongoose_1.model)('infoGraphicDeath', infoGraphicDeathSchema);
+exports["default"] = InfoGraphicDeath;

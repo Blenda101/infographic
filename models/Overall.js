@@ -1,7 +1,7 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const mongoose_1 = require("mongoose");
-const infoGraphicSchema = new mongoose_1.Schema({
+exports.__esModule = true;
+var mongoose_1 = require("mongoose");
+var infoGraphicOverAllSchema = new mongoose_1.Schema({
     Year: String,
     Locationabbr: String,
     Locationdesc: String,
@@ -17,7 +17,7 @@ const infoGraphicSchema = new mongoose_1.Schema({
     Actual_Data_Value_Number: Number,
     Confidence_limit_Low: String,
     Confidence_limit_High: String,
-    Data_value_unit: String,
+    Data_value_unit: String
 });
-const InfoGraphic = (0, mongoose_1.model)('infoGraphic', infoGraphicSchema);
-exports.default = InfoGraphic;
+var InfoGraphicOverAllSchema = (0, mongoose_1.model)('infoGraphicOverAll', infoGraphicOverAllSchema);
+exports["default"] = InfoGraphicOverAllSchema;

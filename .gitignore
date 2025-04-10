@@ -3,3 +3,4 @@ config.env/
 src/
 dist/
 temp/
+*.js/
