@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node ./dist/server.js",
+    "build": "node ./dist/server.js"
   },
   "keywords": [],
   "author": "Badhon",
